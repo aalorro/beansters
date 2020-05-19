@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aalorro/beansters/issues"
   },
-  "homepage": "https://github.com/aalorro/beansters#readme"
+  "homepage": "https://github.com/aalorro/beansters#readme",
+  "dependencies": {
+    "mocha": "^7.1.2"
+  }
 }
