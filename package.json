@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aalorro/beansters.git"
@@ -15,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/aalorro/beansters/issues"
   },
-  "homepage": "https://github.com/aalorro/beansters#readme"
+  "homepage": "https://github.com/aalorro/beansters#readme",
+  "dependencies": {
+    "mocha": "^7.1.2"
+  }
 }
