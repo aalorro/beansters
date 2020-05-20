@@ -1,9 +1,6 @@
- version: 2.1 
+version: 2
 
- orbs:
-   aws-s3: circleci/aws-s3@1.0.15
-
- workflows: 
+workflows: 
    version: 2
    build-deploy: 
      jobs:
@@ -15,14 +12,14 @@
              branches:
                only: master 
 
- jobs: 
+jobs: 
    build:
      docker: 
-       - image: circleci/python 
+       - image: alpine:3.4 
    
    deploy:
      docker: 
-       - image: circleci/node 
+       - image: alpine:3.4 
      steps:
        - checkout
        - aws-s3/sync:
