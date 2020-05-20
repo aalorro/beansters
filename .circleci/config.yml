@@ -16,10 +16,9 @@ jobs:
      steps:
        - checkout
        - aws-s3/sync:
-           from: /home/ubuntu
+           from: /home/circleci/project
            to: 's3://beansters-site/html'
            arguments: | 
              --acl public-read \
              --cache-control "max-age=86400"
            overwrite: true
-           
