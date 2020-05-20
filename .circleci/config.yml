@@ -18,7 +18,9 @@ workflows:
 jobs: 
    build:
      docker: 
-       - image: alpine:3.4 
+       - image: alpine:3.4
+	 steps:
+	   - checkout
    
    deploy:
      docker: 
