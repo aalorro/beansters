@@ -22,7 +22,7 @@
    
    deploy:
      docker: 
-       - image: buildpack-deps:trusty  
+       - image: circleci/node 
      steps:
        - checkout
        - aws-s3/sync:
