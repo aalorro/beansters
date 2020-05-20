@@ -19,12 +19,12 @@ jobs:
    build:
      docker: 
        - image: alpine:3.4
-	 steps:
-	   - checkout
+     steps:
+	     - checkout
    
    deploy:
      docker: 
-       - image: alpine:3.4 
+       - image: alpine:3.4
      steps:
        - checkout
        - aws-s3/sync:
