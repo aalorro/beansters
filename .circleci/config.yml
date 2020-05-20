@@ -18,15 +18,18 @@ workflows:
 jobs: 
    build:
      docker: 
-       - image: alpine:3.4
+       - image: circleci/python:3.6	
      steps:
        - checkout
    
    deploy:
      docker: 
-       - image: alpine:3.4 
+       - image: circleci/python:3.6	 
      steps:
        - checkout
+       - run:
+           name: Install awscli
+           command: sudo pip install awscli
        - aws-s3/sync:
            from: bucket
            to: 's3://beansters-site/html'
