@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   aws-s3: circleci/aws-s3@1.0.15
 
-workflows: 
+workflows:
    version: 2
    build: 
      jobs:
@@ -11,8 +11,8 @@ workflows:
 
 jobs: 
    build:
-     docker: 
-       - image: 'cimg/python:3.6'	
+     docker:
+       - image: 'cimg/python:3.6'
      steps:
        - checkout
        - aws-s3/sync:
